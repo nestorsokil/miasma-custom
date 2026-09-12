@@ -1,0 +1,42 @@
+{
+  "name": "miasma-custom",
+  "displayName": "Miasma Custom",
+  "description": "Miasma palette with minimalistic syntax highlighting and greyish-white default code",
+  "version": "0.0.1",
+  "engines": {
+    "vscode": "^1.70.0"
+  },
+  "categories": ["Themes"],
+  "contributes": {
+    "themes": [
+      {
+        "label": "Miasma Custom",
+        "uiTheme": "vs-dark",
+        "path": "./themes/miasma-custom.json"
+      }
+    ],
+    "grammars": [
+      {
+        "scopeName": "codetag.injection",
+        "path": "./syntaxes/codetags.json",
+        "injectTo": [
+          "source.go",
+          "source.java",
+          "source.js",
+          "source.jsx",
+          "source.ts",
+          "source.tsx",
+          "source.python",
+          "source.rust",
+          "source.c",
+          "source.cpp",
+          "source.shell",
+          "source.yaml",
+          "source.sql",
+          "source.hcl",
+          "source.dockerfile"
+        ]
+      }
+    ]
+  }
+}

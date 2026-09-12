@@ -1,0 +1,10 @@
+{
+  "scopeName": "codetag.injection",
+  "injectionSelector": "L:comment",
+  "patterns": [
+    {
+      "match": "\\b(TODO|FIXME|XXX|HACK|BUG|NOTE)\\b:?.*",
+      "name": "keyword.codetag.notation"
+    }
+  ]
+}
